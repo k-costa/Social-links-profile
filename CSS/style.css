@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reset CSS */
+:root{
+    font-size: 62.5%;
+    --primary-green: hsl(75, 94%, 57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--neutral-off-black);
+    font-family: "Inter", sans-serif;
+}
+
+main{
+    background-color: var(--neutral-dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 37.0rem;
+    height: 61rem;
+    padding: 4rem;  
+    border-radius: 1rem;      
+}
+
+.profile header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--neutral-white);
+}
+
+.profile img{
+    width: 9rem;
+    border-radius: 50%;
+}
+
+.profile h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+.profile h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-top: 1rem;
+}
+
+.profile p{
+    color: var(--neutral-white);
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1.42rem;
+    font-weight: 400;
+}
+
+.social-links{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.social-links nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.social-links a{
+    background-color: var(--neutral-grey);
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 1rem;
+    color: var(--neutral-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.social-links a:hover{
+    background-color: var(--primary-green);
+    color: var(--neutral-dark-grey);
+}
+
+@media screen and (max-width:440px) {
+    main{
+        width: 33rem;
+        padding: 2.5rem;
+    }        
+}
